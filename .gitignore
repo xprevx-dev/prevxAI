@@ -1,0 +1,22 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.venv/
+venv/
+
+# Training artefacts — checkpoints are large, keep them out of git
+runs/
+*.pt
+*.bin
+
+# Tokenised data (regenerate with scripts/prepare_data.py).
+# tokenizer.json is small and worth committing if you want reproducible runs.
+data/*.bin
+data/tinyshakespeare.txt
+
+# OS / editor
+.DS_Store
+.idea/
+.vscode/

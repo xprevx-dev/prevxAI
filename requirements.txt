@@ -1,0 +1,14 @@
+# Runtime: PyTorch is the ONLY dependency. Everything else is stdlib.
+#
+# CUDA build (for your RTX 3050) — pick the wheel index matching your driver:
+#   pip install torch --index-url https://download.pytorch.org/whl/cu121
+#
+# CPU-only build (for hacking on a laptop):
+#   pip install torch --index-url https://download.pytorch.org/whl/cpu
+torch>=2.2
+
+# Tokenising and batching use numpy directly.
+numpy>=1.24
+
+# Dev only
+pytest>=7.0
